@@ -41,29 +41,29 @@ const T = {
 
 // ─── MOCK DATA ───────────────────────────────────────────────
 const CATEGORIES = [
-  { id:"ec",    name:"ECサイト",        icon:"🛒", count:42, color:T.teal   },
-  { id:"lp",    name:"ランディングページ", icon:"🚀", count:68, color:T.cyan   },
-  { id:"booking",name:"予約・サロン",    icon:"📅", count:29, color:T.purple },
-  { id:"portfolio",name:"ポートフォリオ", icon:"🎨", count:55, color:T.orange },
-  { id:"blog",  name:"ブログ・メディア",  icon:"📝", count:37, color:T.pink   },
-  { id:"biz",   name:"コーポレート",     icon:"🏢", count:61, color:T.gold   },
-  { id:"saas",  name:"SaaS・ツール",     icon:"⚙️", count:24, color:"#34D399" },
-  { id:"event", name:"イベント",         icon:"🎉", count:18, color:"#F472B6" },
+  { id:"ec",    name:"ECサイト", count:42, color:T.teal   },
+  { id:"lp",    name:"ランディングページ", count:68, color:T.cyan   },
+  { id:"booking",name:"予約・サロン", count:29, color:T.purple },
+  { id:"portfolio",name:"ポートフォリオ", count:55, color:T.orange },
+  { id:"blog",  name:"ブログ・メディア", count:37, color:T.pink   },
+  { id:"biz",   name:"コーポレート", count:61, color:T.gold   },
+  { id:"saas",  name:"SaaS・ツール", count:24, color:"#34D399" },
+  { id:"event", name:"イベント", count:18, color:"#F472B6" },
 ];
 
 const SITES = [
-  { id:1, title:"Ultra Commerce Pro",  cat:"ec",      price:4800,  monthly:null, desc:"決済・在庫・SEO完備の本格ECサイト。スマホ対応済み。", seller:"TechDesign JP", rating:4.9, sales:234, badge:"人気No.1", color:"#00C9A7", preview:"🛒" },
-  { id:2, title:"ConvertFlow LP",      cat:"lp",      price:2800,  monthly:null, desc:"高転換率LPテンプレ。A/Bテスト機能付き。", seller:"GrowthHacker",  rating:4.7, sales:189, badge:"新着",    color:"#0EA5E9", preview:"🚀" },
-  { id:3, title:"Salon Booking Suite", cat:"booking", price:6500,  monthly:null, desc:"予約・顧客管理・LINE連携対応のサロン特化サイト。", seller:"BeautyTech",    rating:4.8, sales:97,  badge:"人気",    color:"#8B5CF6", preview:"📅" },
-  { id:4, title:"Minimal Portfolio",   cat:"portfolio",price:1800, monthly:null, desc:"写真・動画ギャラリー機能付き。デザイナー向け。", seller:"PixelCraft",    rating:4.6, sales:312, badge:null,      color:"#F97316", preview:"🎨" },
-  { id:5, title:"TechBlog Pro",        cat:"blog",    price:2200,  monthly:null, desc:"SEO最適化済みブログ。ダーク/ライトモード対応。", seller:"ContentPro",    rating:4.5, sales:156, badge:null,      color:"#EC4899", preview:"📝" },
-  { id:6, title:"Corporate Premium",   cat:"biz",     price:9800,  monthly:null, desc:"採用・IR・多言語対応のエンタープライズ向けコーポレートサイト。", seller:"BizFactory",    rating:5.0, sales:78,  badge:"プレミアム",color:"#F59E0B", preview:"🏢" },
-  { id:7, title:"SaaS Dashboard Kit",  cat:"saas",    price:12000, monthly:980,  desc:"ユーザー管理・課金・分析を備えたSaaS基盤。APIドキュメント付き。", seller:"DevForge",      rating:4.9, sales:45,  badge:"新着",    color:"#34D399", preview:"⚙️" },
-  { id:8, title:"Event Flow",          cat:"event",   price:3200,  monthly:null, desc:"チケット販売・QRコード入場管理・配信対応のイベントサイト。", seller:"EventLab",      rating:4.4, sales:203, badge:null,      color:"#F472B6", preview:"🎉" },
-  { id:9, title:"FoodDelivery UI",     cat:"ec",      price:5500,  monthly:null, desc:"フードデリバリー専用EC。GPSトラッキング、注文管理付き。", seller:"FoodTech",      rating:4.7, sales:134, badge:"人気",    color:"#00C9A7", preview:"🍔" },
-  { id:10,title:"Agency Portfolio",    cat:"portfolio",price:3800, monthly:null, desc:"制作会社向け。実績・チーム紹介・お問い合わせフォーム完備。", seller:"AgencyKit",     rating:4.6, sales:88,  badge:null,      color:"#F97316", preview:"💼" },
-  { id:11,title:"AI Landing Generator",cat:"lp",      price:7200,  monthly:480,  desc:"ChatGPTでコンテンツ自動生成するLPビルダー。", seller:"AIFactory",     rating:4.8, sales:67,  badge:"話題",    color:"#0EA5E9", preview:"🤖" },
-  { id:12,title:"Membership Platform", cat:"saas",    price:15000, monthly:1200, desc:"会員制コミュニティ + コース販売 + 決済の3点セット。", seller:"CommKit",       rating:4.9, sales:39,  badge:"プレミアム",color:"#34D399", preview:"👥" },
+  { id:1, title:"Ultra Commerce Pro",  cat:"ec",      price:4800,  monthly:null, desc:"決済・在庫・SEO完備の本格ECサイト。スマホ対応済み。", seller:"TechDesign JP", rating:4.9, sales:234, badge:"人気No.1", color:"#00C9A7" },
+  { id:2, title:"ConvertFlow LP",      cat:"lp",      price:2800,  monthly:null, desc:"高転換率LPテンプレ。A/Bテスト機能付き。", seller:"GrowthHacker",  rating:4.7, sales:189, badge:"新着",    color:"#0EA5E9" },
+  { id:3, title:"Salon Booking Suite", cat:"booking", price:6500,  monthly:null, desc:"予約・顧客管理・LINE連携対応のサロン特化サイト。", seller:"BeautyTech",    rating:4.8, sales:97,  badge:"人気",    color:"#8B5CF6" },
+  { id:4, title:"Minimal Portfolio",   cat:"portfolio",price:1800, monthly:null, desc:"写真・動画ギャラリー機能付き。デザイナー向け。", seller:"PixelCraft",    rating:4.6, sales:312, badge:null,      color:"#F97316" },
+  { id:5, title:"TechBlog Pro",        cat:"blog",    price:2200,  monthly:null, desc:"SEO最適化済みブログ。ダーク/ライトモード対応。", seller:"ContentPro",    rating:4.5, sales:156, badge:null,      color:"#EC4899" },
+  { id:6, title:"Corporate Premium",   cat:"biz",     price:9800,  monthly:null, desc:"採用・IR・多言語対応のエンタープライズ向けコーポレートサイト。", seller:"BizFactory",    rating:5.0, sales:78,  badge:"プレミアム",color:"#F59E0B" },
+  { id:7, title:"SaaS Dashboard Kit",  cat:"saas",    price:12000, monthly:980,  desc:"ユーザー管理・課金・分析を備えたSaaS基盤。APIドキュメント付き。", seller:"DevForge",      rating:4.9, sales:45,  badge:"新着",    color:"#34D399" },
+  { id:8, title:"Event Flow",          cat:"event",   price:3200,  monthly:null, desc:"チケット販売・QRコード入場管理・配信対応のイベントサイト。", seller:"EventLab",      rating:4.4, sales:203, badge:null,      color:"#F472B6" },
+  { id:9, title:"FoodDelivery UI",     cat:"ec",      price:5500,  monthly:null, desc:"フードデリバリー専用EC。GPSトラッキング、注文管理付き。", seller:"FoodTech",      rating:4.7, sales:134, badge:"人気",    color:"#00C9A7" },
+  { id:10,title:"Agency Portfolio",    cat:"portfolio",price:3800, monthly:null, desc:"制作会社向け。実績・チーム紹介・お問い合わせフォーム完備。", seller:"AgencyKit",     rating:4.6, sales:88,  badge:null,      color:"#F97316" },
+  { id:11,title:"AI Landing Generator",cat:"lp",      price:7200,  monthly:480,  desc:"ChatGPTでコンテンツ自動生成するLPビルダー。", seller:"AIFactory",     rating:4.8, sales:67,  badge:"話題",    color:"#0EA5E9" },
+  { id:12,title:"Membership Platform", cat:"saas",    price:15000, monthly:1200, desc:"会員制コミュニティ + コース販売 + 決済の3点セット。", seller:"CommKit",       rating:4.9, sales:39,  badge:"プレミアム",color:"#34D399" },
 ];
 
 const PLANS = [
@@ -74,7 +74,7 @@ const PLANS = [
 
 // ─── HELPERS ────────────────────────────────────────────────
 const fmt = n => `¥${n.toLocaleString()}`;
-const stars = r => "★".repeat(Math.floor(r)) + (r%1>=0.5?"½":"") ;
+const stars = r => r.toFixed(1);
 
 // ─── STYLE HELPERS ──────────────────────────────────────────
 const css = {
@@ -142,7 +142,7 @@ function Nav({ page, setPage, user, setShowAuth, cart, setCart }) {
       <div style={{maxWidth:1280,margin:"0 auto",height:60,display:"flex",alignItems:"center",gap:24}}>
         {/* Logo */}
         <div onClick={()=>setPage("home")} style={{cursor:"pointer",display:"flex",alignItems:"center",gap:8,flexShrink:0}}>
-          <div style={{width:32,height:32,background:`linear-gradient(135deg,${T.teal},${T.cyan})`,borderRadius:8,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>⚡</div>
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="7" fill={T.teal} fillOpacity="0.13" stroke={T.teal} strokeWidth="1.2"/><polyline points="10,15 14,19 21,10" stroke={T.teal} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           <span className="syne" style={{fontWeight:800,fontSize:18,color:T.white}}>Vibe<span style={{color:T.teal}}>Code</span></span>
         </div>
 
@@ -161,7 +161,7 @@ function Nav({ page, setPage, user, setShowAuth, cart, setCart }) {
 
         {/* Search */}
         <div style={{flex:1,maxWidth:300,position:"relative"}}>
-          <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",color:T.gray,fontSize:14}}>🔍</span>
+          <svg style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)"}} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
           <input className="input" placeholder="サイトを検索..." style={{width:"100%",paddingLeft:32,fontSize:13}} />
         </div>
 
@@ -208,7 +208,7 @@ function HomePage({ setPage, setSelectedSite, user, setShowAuth }) {
         {/* BG effects */}
         <div style={{position:"absolute",top:-60,right:-60,width:400,height:400,borderRadius:"50%",background:`${T.teal}08`,pointerEvents:"none"}} />
         <div style={{position:"absolute",bottom:-80,right:100,width:250,height:250,borderRadius:"50%",background:`${T.cyan}06`,pointerEvents:"none"}} />
-        <div style={{position:"absolute",top:20,right:80,opacity:0.06,fontSize:180,pointerEvents:"none",userSelect:"none"}}>⚡</div>
+        <svg style={{position:"absolute",top:20,right:80,opacity:0.04,pointerEvents:"none"}} width="200" height="200" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="95" stroke={T.teal} strokeWidth="2"/><circle cx="100" cy="100" r="75" stroke={T.teal} strokeWidth="1"/><polyline points="65,100 90,130 140,68" stroke={T.teal} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/></svg>
 
         <div style={{position:"relative",maxWidth:640}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:8,background:`${T.teal}18`,border:`1px solid ${T.teal}33`,borderRadius:20,padding:"4px 14px",fontSize:12,color:T.teal,marginBottom:20,fontWeight:600}}>
@@ -224,7 +224,7 @@ function HomePage({ setPage, setSelectedSite, user, setShowAuth }) {
           <div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
             <button onClick={()=>user ? setPage("market") : setShowAuth("register")} className="btn-teal"
               style={{...css.tealBtn,padding:"14px 28px",fontSize:15,borderRadius:10,display:"flex",alignItems:"center",gap:8}}>
-              ⚡ 今すぐ無料登録
+              今すぐ無料登録
             </button>
             <button onClick={()=>setPage("market")} className="btn-ghost"
               style={{...css.ghostBtn,padding:"14px 28px",fontSize:15,borderRadius:10}}>
@@ -249,9 +249,9 @@ function HomePage({ setPage, setSelectedSite, user, setShowAuth }) {
         </h2>
         <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:16}}>
           {[
-            { n:"01", icon:"💳", title:"サブスク購入", desc:"PayPal等で3ヶ月分の利用料を支払い。初期費用ゼロで即日アクティベート。", color:T.teal },
-            { n:"02", icon:"🤖", title:"AIに指示するだけ", desc:"「ヘッダーの色を変えて」「商品ページを追加して」チャットで指示するとAIが自動修正。", color:T.cyan },
-            { n:"03", icon:"🛒", title:"マーケットで売買", desc:"完成したサイトをマーケットに出品。他ユーザーのサイトも購入して即使える。", color:T.purple },
+            { n:"01", title:"サブスク購入", desc:"PayPal等で3ヶ月分の利用料を支払い。初期費用ゼロで即日アクティベート。", color:T.teal },
+            { n:"02", title:"AIに指示するだけ", desc:"「ヘッダーの色を変えて」「商品ページを追加して」チャットで指示するとAIが自動修正。", color:T.cyan },
+            { n:"03", title:"マーケットで売買", desc:"完成したサイトをマーケットに出品。他ユーザーのサイトも購入して即使える。", color:T.purple },
           ].map(s=>(
             <div key={s.n} style={{...css.card,padding:24,position:"relative",overflow:"hidden"}} className="hover-card">
               <div style={{position:"absolute",top:-10,right:-10,fontSize:60,opacity:0.05}}>{s.icon}</div>
@@ -274,7 +274,16 @@ function HomePage({ setPage, setSelectedSite, user, setShowAuth }) {
           {CATEGORIES.map(c=>(
             <div key={c.id} className="cat-card hover-card" onClick={()=>setPage("market")}
               style={{"--cat-color":c.color,...css.card,padding:"16px 20px",cursor:"pointer",display:"flex",alignItems:"center",gap:12}}>
-              <div style={{fontSize:28}}>{c.icon}</div>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={c.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  {c.id==="ec"&&<><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></>}
+  {c.id==="lp"&&<polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>}
+  {c.id==="booking"&&<><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></>}
+  {c.id==="portfolio"&&<><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></>}
+  {c.id==="blog"&&<><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></>}
+  {c.id==="biz"&&<><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></>}
+  {c.id==="saas"&&<><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></>}
+  {c.id==="event"&&<><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></>}
+</svg>
               <div>
                 <div style={{fontSize:14,fontWeight:600}}>{c.name}</div>
                 <div style={{fontSize:12,color:T.gray}}>{c.count}サイト</div>
@@ -299,7 +308,7 @@ function HomePage({ setPage, setSelectedSite, user, setShowAuth }) {
       <div style={{borderRadius:16,padding:"36px 40px",marginBottom:32,
         background:`linear-gradient(135deg,#071322 0%,#0A2218 100%)`,
         border:`1px solid ${T.teal}33`,display:"flex",alignItems:"center",gap:40,flexWrap:"wrap"}}>
-        <div style={{fontSize:60}}>🤖</div>
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         <div style={{flex:1,minWidth:240}}>
           <h3 className="syne" style={{fontSize:24,fontWeight:700,marginBottom:8}}>
             <span style={{color:T.teal}}>AIチャット</span>でサイトを修正
@@ -358,7 +367,7 @@ function SiteCard({ site, onSelect, compact }) {
             {site.monthly && <span style={{fontSize:11,color:T.gray}}> + {fmt(site.monthly)}/月</span>}
           </div>
           <div style={{display:"flex",alignItems:"center",gap:4,fontSize:12,color:T.gold}}>
-            ★ <span>{site.rating}</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill={T.gold} stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg> <span>{site.rating}</span>
             <span style={{color:T.gray}}>({site.sales})</span>
           </div>
         </div>
@@ -389,7 +398,7 @@ function MarketPage({ setSelectedSite, setPage }) {
 
       {/* Filter bar */}
       <div style={{display:"flex",gap:12,marginBottom:24,alignItems:"center",flexWrap:"wrap"}}>
-        <input className="input" placeholder="🔍 サイト名・キーワードで検索..."
+        <input className="input" placeholder="サイト名・キーワードで検索..."
           value={search} onChange={e=>setSearch(e.target.value)}
           style={{flex:1,minWidth:200}} />
         <select className="input" value={sort} onChange={e=>setSort(e.target.value)}
@@ -406,14 +415,23 @@ function MarketPage({ setSelectedSite, setPage }) {
         {/* Sidebar */}
         <div style={{width:200,flexShrink:0}}>
           <div className="syne" style={{fontSize:12,fontWeight:700,color:T.gray,marginBottom:12,letterSpacing:"0.1em"}}>カテゴリ</div>
-          {[{id:"all",name:"すべて",icon:"🏠",count:SITES.length},...CATEGORIES].map(c=>(
+          {[{id:"all",name:"すべて",count:SITES.length},...CATEGORIES].map(c=>(
             <button key={c.id} onClick={()=>setCat(c.id)}
               style={{display:"flex",alignItems:"center",gap:10,width:"100%",padding:"9px 12px",borderRadius:8,
                 background: cat===c.id ? `${T.teal}18` : "none",
                 border: cat===c.id ? `1px solid ${T.teal}44` : "1px solid transparent",
                 color: cat===c.id ? T.teal : T.lgray,
                 cursor:"pointer",fontSize:13,marginBottom:4,textAlign:"left",fontFamily:"'DM Sans',sans-serif"}}>
-              <span>{c.icon}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={cat===c.id?T.teal:T.gray} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+  {c.id==="ec"&&<><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></>}
+  {c.id==="lp"&&<polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>}
+  {c.id==="booking"&&<><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></>}
+  {c.id==="portfolio"&&<><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></>}
+  {c.id==="blog"&&<><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></>}
+  {c.id==="biz"&&<><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></>}
+  {c.id==="saas"&&<><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></>}
+  {c.id==="event"&&<><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></>}
+</svg>
               <span style={{flex:1}}>{c.name}</span>
               <span style={{fontSize:11,opacity:0.7}}>{c.count}</span>
             </button>
@@ -431,7 +449,7 @@ function MarketPage({ setSelectedSite, setPage }) {
           </div>
           {sites.length===0 && (
             <div style={{textAlign:"center",padding:60,color:T.gray}}>
-              <div style={{fontSize:40,marginBottom:12}}>🔍</div>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke={T.border} strokeWidth="1.5" strokeLinecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
               <div>「{search}」に一致するサイトが見つかりません</div>
             </div>
           )}
@@ -492,7 +510,7 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
                 <h3 className="syne" style={{fontSize:14,fontWeight:700,marginBottom:12,color:T.gray,letterSpacing:"0.05em"}}>含まれるもの</h3>
                 {["完成済みソースコード一式","セットアップドキュメント","AIチャット修正サポート（初月）","ライセンス：商用利用可"].map(f=>(
                   <div key={f} style={{display:"flex",gap:8,alignItems:"center",padding:"6px 0",borderBottom:`1px solid ${T.border}`,fontSize:14}}>
-                    <span style={{color:T.teal}}>✓</span> {f}
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><polyline points="20,6 9,17 4,12"/></svg> {f}
                   </div>
                 ))}
               </div>
@@ -502,7 +520,7 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
               {["レスポンシブデザイン","SEO最適化済み","高速ページ読み込み","カスタムドメイン対応","多言語対応可","管理画面付き","APIドキュメント","ソースコード編集可"].map(f=>(
                 <div key={f} style={{...css.card,padding:"12px 16px",display:"flex",gap:10,alignItems:"center",fontSize:14}}>
-                  <span style={{color:T.teal,fontSize:16}}>⚡</span> {f}
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20,6 9,17 4,12"/></svg> {f}
                 </div>
               ))}
             </div>
@@ -514,7 +532,7 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
                   <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:8}}>
                     <div style={{width:32,height:32,borderRadius:"50%",background:`${T.teal}22`,border:`1px solid ${T.teal}44`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:13,fontWeight:700,color:T.teal}}>{name[0]}</div>
                     <span style={{fontWeight:600,fontSize:14}}>{name}</span>
-                    <span style={{color:T.gold,fontSize:13}}>{"★".repeat(r)}</span>
+                    <span style={{display:"flex",gap:2}}>{[...Array(r)].map((_,si)=><svg key={si} width="11" height="11" viewBox="0 0 24 24" fill={T.gold} stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}</span>
                   </div>
                   <p style={{color:T.lgray,fontSize:13,lineHeight:1.6}}>{comment}</p>
                 </div>
@@ -529,7 +547,7 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
           {site.monthly && <div style={{fontSize:13,color:T.gray,marginBottom:12}}>+ {fmt(site.monthly)} / 月（サポートプラン）</div>}
           <div style={{display:"flex",gap:12,marginBottom:20,padding:"12px 0",borderBottom:`1px solid ${T.border}`}}>
             <div style={{flex:1,textAlign:"center"}}>
-              <div style={{fontSize:18,fontWeight:700,color:T.gold}}>★ {site.rating}</div>
+              <div style={{display:"flex",alignItems:"center",gap:5}}><svg width="14" height="14" viewBox="0 0 24 24" fill={T.gold} stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg><span style={{fontSize:16,fontWeight:700,color:T.gold}}>{site.rating}</span></div>
               <div style={{fontSize:11,color:T.gray}}>評価</div>
             </div>
             <div style={{flex:1,textAlign:"center"}}>
@@ -540,7 +558,7 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
 
           {already ? (
             <div>
-              <div style={{background:`${T.teal}18`,border:`1px solid ${T.teal}44`,borderRadius:8,padding:12,textAlign:"center",fontSize:14,color:T.teal,marginBottom:12}}>✅ 購入済み</div>
+              <div style={{background:`${T.teal}12`,border:`1px solid ${T.teal}35`,borderRadius:8,padding:12,textAlign:"center",fontSize:13,color:T.teal,marginBottom:12,display:"flex",alignItems:"center",justifyContent:"center",gap:7}}><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20,6 9,17 4,12"/></svg>購入済み</div>
               <button onClick={()=>setPage("aichat")} className="btn-ghost"
                 style={{...css.ghostBtn,width:"100%",padding:"12px",fontSize:14}}>AIで修正する →</button>
             </div>
@@ -558,10 +576,10 @@ function SiteDetailPage({ site, setPage, user, setShowAuth, setPurchased, purcha
           )}
 
           <div style={{marginTop:16,fontSize:12,color:T.gray,lineHeight:1.8}}>
-            ✓ 30日間返金保証<br/>
-            ✓ 商用利用ライセンス付き<br/>
-            ✓ ダウンロード無制限<br/>
-            ✓ AIチャット修正サポート付き
+            — 30日間返金保証<br/>
+            — 商用利用ライセンス付き<br/>
+            — ダウンロード無制限<br/>
+            — AIチャット修正サポート付き
           </div>
 
           <div style={{marginTop:16,padding:"12px 0",borderTop:`1px solid ${T.border}`,fontSize:12,color:T.gray}}>
@@ -595,7 +613,7 @@ function PurchaseModal({ site, onClose, onSuccess }) {
   return (
     <div className="modal-overlay" onClick={e=>e.target===e.currentTarget&&onClose()}>
       <div style={{...css.card,width:"100%",maxWidth:480,padding:32,position:"relative"}} className="fade-in">
-        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}>✕</button>
+        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
 
         {step===1 && (
           <>
@@ -611,11 +629,11 @@ function PurchaseModal({ site, onClose, onSuccess }) {
                 style={{padding:"14px 18px",borderRadius:10,border:`1px solid ${method===m?T.teal:T.border}`,
                   background: method===m?`${T.teal}12`:T.card2,
                   cursor:"pointer",marginBottom:8,display:"flex",alignItems:"center",gap:12,transition:"all 0.2s"}}>
-                <span style={{fontSize:20}}>{{paypal:"💳",card:"💳",bank:"🏦"}[m]}</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                 <span style={{fontSize:14,color: method===m?T.teal:T.lgray}}>
                   {{paypal:"PayPal",card:"クレジットカード",bank:"銀行振込"}[m]}
                 </span>
-                {method===m && <span style={{marginLeft:"auto",color:T.teal}}>✓</span>}
+                {method===m && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20,6 9,17 4,12"/></svg>}
               </div>
             ))}
             <button onClick={()=>setStep(2)} className="btn-teal"
@@ -653,7 +671,7 @@ function PurchaseModal({ site, onClose, onSuccess }) {
         )}
         {step===3 && (
           <div style={{textAlign:"center",padding:"20px 0"}}>
-            <div style={{fontSize:60,marginBottom:16}}>🎉</div>
+            <div style={{width:64,height:64,borderRadius:"50%",background:`${T.teal}12`,border:`1px solid ${T.teal}30`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 20px"}}><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg></div>
             <h2 className="syne" style={{fontSize:22,fontWeight:700,marginBottom:8}}>購入完了！</h2>
             <p style={{color:T.lgray,marginBottom:24,lineHeight:1.7,fontSize:14}}>
               <strong style={{color:T.white}}>{site.title}</strong> の購入が完了しました。<br/>
@@ -673,7 +691,7 @@ function PurchaseModal({ site, onClose, onSuccess }) {
 // ─── AI CHAT PAGE ────────────────────────────────────────────
 function AIChatPage({ user, setShowAuth, purchased }) {
   const [messages, setMessages] = useState([
-    { role:"assistant", content:"こんにちは！VibeCode Market AIアシスタントです 👋\n\nサイトの修正・カスタマイズをお手伝いします。例えば：\n\n・「ヘッダーの色を#00C9A7に変えて」\n・「トップページに動画を追加したい」\n・「ECサイトの商品一覧ページを3列グリッドにして」\n\n何でもご相談ください！管理画面の情報や現在のサイトURLを共有してもらえるとより正確な提案ができます。" }
+    { role:"assistant", content:"こんにちは！VibeCode Market AIアシスタントです\n\nサイトの修正・カスタマイズをお手伝いします。例えば：\n\n・「ヘッダーの色を#00C9A7に変えて」\n・「トップページに動画を追加したい」\n・「ECサイトの商品一覧ページを3列グリッドにして」\n\n何でもご相談ください！管理画面の情報や現在のサイトURLを共有してもらえるとより正確な提案ができます。" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -753,7 +771,7 @@ ${contextInfo ? `\n管理画面・サイト情報:\n${contextInfo}` : ""}
               <span style={{fontSize:24}}>{selectedSite.preview}</span>
               <div>
                 <div style={{fontSize:13,fontWeight:600}}>{selectedSite.title}</div>
-                <div style={{fontSize:11,color:T.teal}}>✓ アクティブ</div>
+                <div style={{display:"flex",alignItems:"center",gap:5,color:T.teal,fontSize:11}}><span style={{width:5,height:5,borderRadius:"50%",background:T.teal,display:"inline-block"}}/>アクティブ</div>
               </div>
             </div>
           ) : (
@@ -806,7 +824,7 @@ ${contextInfo ? `\n管理画面・サイト情報:\n${contextInfo}` : ""}
       <div style={{display:"flex",flexDirection:"column",...css.card,overflow:"hidden"}}>
         {/* Chat header */}
         <div style={{padding:"16px 20px",borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",gap:10}}>
-          <div style={{width:36,height:36,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>🤖</div>
+          <div style={{width:36,height:36,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
           <div>
             <div style={{fontWeight:600,fontSize:14}}>VibeCode AIアシスタント</div>
             <div style={{fontSize:11,color:T.teal,display:"flex",alignItems:"center",gap:4}}>
@@ -823,7 +841,7 @@ ${contextInfo ? `\n管理画面・サイト情報:\n${contextInfo}` : ""}
             <div key={i} style={{display:"flex",flexDirection:"column",alignItems:m.role==="user"?"flex-end":"flex-start"}} className="slide-in">
               {m.role==="assistant" && (
                 <div style={{display:"flex",gap:8,alignItems:"flex-end",width:"100%"}}>
-                  <div style={{width:28,height:28,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12,flexShrink:0,marginBottom:4}}>🤖</div>
+                  <div style={{width:28,height:28,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12,flexShrink:0,marginBottom:4}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
                   <div className="chat-bubble-ai">
                     <div style={{fontSize:14,lineHeight:1.7,whiteSpace:"pre-wrap",color:T.white}}>{m.content}</div>
                   </div>
@@ -838,7 +856,7 @@ ${contextInfo ? `\n管理画面・サイト情報:\n${contextInfo}` : ""}
           ))}
           {loading && (
             <div style={{display:"flex",gap:8,alignItems:"center"}}>
-              <div style={{width:28,height:28,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12}}>🤖</div>
+              <div style={{width:28,height:28,borderRadius:"50%",background:`linear-gradient(135deg,${T.teal},${T.cyan})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
               <div className="chat-bubble-ai">
                 <div style={{display:"flex",gap:4,padding:"4px 0"}}>
                   {[0,1,2].map(i=>(
@@ -855,7 +873,7 @@ ${contextInfo ? `\n管理画面・サイト情報:\n${contextInfo}` : ""}
         <div style={{padding:"16px 20px",borderTop:`1px solid ${T.border}`}}>
           {!user && (
             <div style={{background:`${T.orange}18`,border:`1px solid ${T.orange}44`,borderRadius:8,padding:"10px 16px",marginBottom:12,fontSize:13,color:T.orange,display:"flex",alignItems:"center",gap:8}}>
-              ⚠️ ログインするとAIチャットが利用できます。
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.orange} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> ログインするとAIチャットが利用できます。
               <span onClick={()=>setShowAuth("login")} style={{cursor:"pointer",textDecoration:"underline"}}>ログイン</span>
             </div>
           )}
@@ -950,7 +968,7 @@ function PricingPage({ user, setShowAuth, setPage }) {
               </div>
               {plan.features.map(f=>(
                 <div key={f} style={{display:"flex",gap:8,padding:"6px 0",fontSize:13,borderBottom:`1px solid ${T.border}`}}>
-                  <span style={{color:T.teal,flexShrink:0}}>✓</span> {f}
+                  <span style={{color:T.teal,flexShrink:0,marginRight:6}}>—</span> {f}
                 </div>
               ))}
             </div>
@@ -1011,7 +1029,7 @@ function SubscribeModal({ plan, billing, onClose, onSuccess }) {
   return (
     <div className="modal-overlay" onClick={e=>e.target===e.currentTarget&&onClose()}>
       <div style={{...css.card,width:"100%",maxWidth:460,padding:32}} className="fade-in">
-        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}>✕</button>
+        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         {step===1 ? (
           <>
             <h2 className="syne" style={{fontSize:20,fontWeight:700,marginBottom:20}}>サブスクリプション確認</h2>
@@ -1032,7 +1050,7 @@ function SubscribeModal({ plan, billing, onClose, onSuccess }) {
             <div style={{marginBottom:20}}>
               <label style={{fontSize:13,color:T.lgray,display:"block",marginBottom:6}}>支払い方法</label>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
-                {["💳 PayPal","💳 クレカ"].map(m=>(
+                {["PayPal","クレカ"].map(m=>(
                   <button key={m} style={{background:T.card2,border:`1px solid ${T.teal}`,borderRadius:8,padding:12,color:T.teal,cursor:"pointer",fontSize:14,fontFamily:"'DM Sans',sans-serif"}}>{m}</button>
                 ))}
               </div>
@@ -1044,7 +1062,7 @@ function SubscribeModal({ plan, billing, onClose, onSuccess }) {
           </>
         ) : (
           <div style={{textAlign:"center",padding:"20px 0"}}>
-            <div style={{fontSize:64,marginBottom:16}}>✅</div>
+            <div style={{width:64,height:64,borderRadius:"50%",background:`${T.teal}12`,border:`1px solid ${T.teal}30`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 20px"}}><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg></div>
             <h2 className="syne" style={{fontSize:22,fontWeight:700,marginBottom:8}}>ご登録完了！</h2>
             <p style={{color:T.lgray,lineHeight:1.8,fontSize:14,marginBottom:24}}><strong style={{color:T.white}}>{plan.name}プラン</strong>へようこそ！<br/>全機能が今すぐ利用できます。</p>
             <button onClick={onSuccess} className="btn-teal"
@@ -1061,7 +1079,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
   const [tab, setTab] = useState("overview");
   if(!user) return (
     <div style={{textAlign:"center",padding:80,color:T.gray}}>
-      <div style={{fontSize:48,marginBottom:16}}>🔐</div>
+      <div style={{width:56,height:56,borderRadius:"50%",background:`${T.border}18`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 16px"}}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
       <div style={{fontSize:18,marginBottom:8}}>ログインが必要です</div>
     </div>
   );
@@ -1077,7 +1095,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
           {user.name[0]}
         </div>
         <div>
-          <h1 className="syne" style={{fontSize:24,fontWeight:800}}>こんにちは、{user.name}さん 👋</h1>
+          <h1 className="syne" style={{fontSize:24,fontWeight:800}}>こんにちは、{user.name}さん</h1>
           <p style={{color:T.lgray,fontSize:13}}>プロプラン / 有効期限: 2025年12月31日</p>
         </div>
         <div style={{marginLeft:"auto",display:"flex",gap:10}}>
@@ -1106,10 +1124,10 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
           {/* Stats */}
           <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:16,marginBottom:28}}>
             {[
-              {label:"保有サイト数", value:myPurchases.length, icon:"🌐", color:T.teal},
-              {label:"AI修正残回数", value:"187 / 300", icon:"🤖", color:T.cyan},
-              {label:"今月の売上", value:"¥24,800", icon:"💰", color:T.gold},
-              {label:"ストレージ使用", value:"12.3 / 30GB", icon:"💾", color:T.purple},
+              {label:"保有サイト数", value:myPurchases.length, color:T.teal},
+              {label:"AI修正残回数", value:"187 / 300", color:T.cyan},
+              {label:"今月の売上", value:"¥24,800", color:T.gold},
+              {label:"ストレージ使用", value:"12.3 / 30GB", color:T.purple},
             ].map(s=>(
               <div key={s.label} style={{...css.card,padding:20}}>
                 <div style={{fontSize:24,marginBottom:8}}>{s.icon}</div>
@@ -1143,7 +1161,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
               <h3 className="syne" style={{fontSize:15,fontWeight:700,marginBottom:16}}>AI修正履歴</h3>
               {["ヘッダーロゴを変更","商品画像を3列グリッドに","フッターに地図を追加","CTAボタンの色をティールに"].map((h,i)=>(
                 <div key={i} style={{display:"flex",gap:10,alignItems:"center",padding:"9px 0",borderBottom:`1px solid ${T.border}`}}>
-                  <span style={{color:T.teal,fontSize:14}}>🤖</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
                   <span style={{fontSize:13,flex:1}}>{h}</span>
                   <span style={{fontSize:11,color:T.gray}}>{i+1}日前</span>
                 </div>
@@ -1177,7 +1195,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
             ))}
             {myPurchases.length===0 && (
               <div style={{gridColumn:"1/-1",textAlign:"center",padding:60,color:T.gray}}>
-                <div style={{fontSize:48,marginBottom:16}}>🛒</div>
+                <div style={{width:56,height:56,borderRadius:"50%",background:`${T.teal}10`,border:`1px solid ${T.teal}25`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 16px"}}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
                 <div style={{fontSize:16,marginBottom:12}}>まだサイトを購入していません</div>
                 <button onClick={()=>setPage("market")} className="btn-teal"
                   style={{...css.tealBtn,padding:"10px 24px",fontSize:14,borderRadius:8}}>
@@ -1195,7 +1213,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
             <div style={{display:"flex",justifyContent:"space-between",alignItems:"start",marginBottom:20}}>
               <div>
                 <div className="syne" style={{fontSize:20,fontWeight:700}}>プロプラン</div>
-                <div style={{color:T.teal,fontSize:14,marginTop:4}}>✓ アクティブ</div>
+                <div style={{display:"flex",alignItems:"center",gap:5,color:T.teal,fontSize:11,marginTop:4}}><span style={{width:5,height:5,borderRadius:"50%",background:T.teal,display:"inline-block"}}/>アクティブ</div>
               </div>
               <div style={{textAlign:"right"}}>
                 <div className="syne" style={{fontSize:28,fontWeight:800,color:T.teal}}>¥7,600</div>
@@ -1253,7 +1271,7 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
           <div style={{...css.card,padding:20}}>
             <h3 className="syne" style={{fontSize:15,fontWeight:700,marginBottom:16}}>出品中のサイト</h3>
             <div style={{color:T.gray,fontSize:13,textAlign:"center",padding:"30px 0"}}>
-              <div style={{fontSize:40,marginBottom:12}}>📦</div>
+              <div style={{width:48,height:48,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 12px"}}><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke={T.border} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"><line x1="16.5" y1="9.4" x2="7.55" y2="4.24"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27,6.96 12,12.01 20.73,6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
               出品中のサイトはまだありません。<br/>
               <button onClick={()=>setPage("upload")} style={{color:T.teal,background:"none",border:"none",cursor:"pointer",fontSize:13,marginTop:8}}>
                 サイトを出品する →
@@ -1269,11 +1287,11 @@ function DashboardPage({ user, purchased, setPage, setSelectedSite }) {
 // ─── UPLOAD PAGE ─────────────────────────────────────────────
 function UploadPage({ user, setShowAuth }) {
   const [step, setStep] = useState(1);
-  const [form, setForm] = useState({ title:"", cat:"", price:"", desc:"", preview:"" });
+  const [form, setForm] = useState({ title:"", cat:"", price:"", desc:"" });
   const [submitted, setSubmitted] = useState(false);
   if(!user) return (
     <div style={{textAlign:"center",padding:80}}>
-      <div style={{fontSize:48,marginBottom:16}}>🔐</div>
+      <div style={{width:56,height:56,borderRadius:"50%",background:`${T.border}18`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 16px"}}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
       <div style={{color:T.gray,fontSize:16,marginBottom:16}}>サイトを出品するにはログインが必要です</div>
       <button onClick={()=>setShowAuth("login")} className="btn-teal"
         style={{...css.tealBtn,padding:"10px 24px",fontSize:14,borderRadius:8}}>ログイン</button>
@@ -1281,13 +1299,13 @@ function UploadPage({ user, setShowAuth }) {
   );
   if(submitted) return (
     <div style={{textAlign:"center",maxWidth:480,margin:"80px auto",padding:24}} className="fade-in">
-      <div style={{fontSize:64,marginBottom:20}}>🎉</div>
+      <div style={{width:64,height:64,borderRadius:"50%",background:`${T.teal}12`,border:`1px solid ${T.teal}30`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 20px"}}><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg></div>
       <h2 className="syne" style={{fontSize:26,fontWeight:700,marginBottom:12}}>出品申請完了！</h2>
       <p style={{color:T.lgray,lineHeight:1.8,marginBottom:24}}>
         <strong style={{color:T.white}}>{form.title}</strong> の出品申請を受け付けました。<br/>
         審査後（通常1〜2営業日）、マーケットに公開されます。
       </p>
-      <button onClick={()=>setSubmitted(false)||setStep(1)||setForm({title:"",cat:"",price:"",desc:"",preview:""})}
+      <button onClick={()=>setSubmitted(false)||setStep(1)||setForm({title:"",cat:"",price:"",desc:""})}
         className="btn-teal" style={{...css.tealBtn,padding:"12px 32px",fontSize:14,borderRadius:8}}>
         続けて出品する
       </button>
@@ -1307,7 +1325,7 @@ function UploadPage({ user, setShowAuth }) {
               background: step>i+1?T.teal:step===i+1?T.teal:"none",
               border: `2px solid ${step>=i+1?T.teal:T.border}`,
               color: step>=i+1?T.bg:T.gray}}>
-              {step>i+1?"✓":i+1}
+              {step>i+1 ? <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={T.bg} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20,6 9,17 4,12"/></svg> : i+1}
             </div>
             <span style={{fontSize:13,color:step===i+1?T.teal:T.gray,fontWeight:step===i+1?600:400}}>{s}</span>
             {i<2 && <span style={{color:T.border}}>—</span>}
@@ -1341,7 +1359,7 @@ function UploadPage({ user, setShowAuth }) {
             <div style={{marginBottom:24}}>
               <label style={{fontSize:13,color:T.lgray,display:"block",marginBottom:6}}>プレビュー絵文字</label>
               <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:8}}>
-                {["🛒","🚀","📅","🎨","📝","🏢","⚙️","🎉","💼","🤖","👥","🍔"].map(e=>(
+                {["ec","lp","booking","portfolio","blog","biz","saas","event","portfolio","saas","saas","ec"].map((e,ei)=>(
                   <button key={e} onClick={()=>setForm({...form,preview:e})}
                     style={{width:40,height:40,borderRadius:8,border:`1px solid ${form.preview===e?T.teal:T.border}`,
                       background: form.preview===e?`${T.teal}22`:T.card2,fontSize:20,cursor:"pointer"}}>
@@ -1396,7 +1414,7 @@ function UploadPage({ user, setShowAuth }) {
             <div style={{background:T.card2,border:`1px solid ${T.teal}33`,borderRadius:12,padding:20,marginBottom:24}}>
               <div style={{display:"flex",gap:12,alignItems:"center",marginBottom:16,paddingBottom:16,borderBottom:`1px solid ${T.border}`}}>
                 <div style={{width:56,height:56,background:`linear-gradient(135deg,${T.teal}22,${T.cyan}11)`,borderRadius:10,display:"flex",alignItems:"center",justifyContent:"center",fontSize:28}}>
-                  {form.preview||"🌐"}
+                  {form.preview||"—"}
                 </div>
                 <div>
                   <div className="syne" style={{fontSize:18,fontWeight:700}}>{form.title}</div>
@@ -1411,7 +1429,7 @@ function UploadPage({ user, setShowAuth }) {
             </div>
 
             <div style={{background:`${T.orange}12`,border:`1px solid ${T.orange}33`,borderRadius:8,padding:"12px 16px",marginBottom:20,fontSize:13,color:T.orange,lineHeight:1.7}}>
-              ⚠️ 出品後、審査が完了するまで1〜2営業日かかります。審査完了後にメールでお知らせします。
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.orange} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 出品後、審査が完了するまで1〜2営業日かかります。審査完了後にメールでお知らせします。
             </div>
 
             <div style={{display:"flex",gap:10}}>
@@ -1419,7 +1437,7 @@ function UploadPage({ user, setShowAuth }) {
                 style={{...css.ghostBtn,flex:1,padding:14,fontSize:14,borderRadius:8,cursor:"pointer"}}>← 戻る</button>
               <button onClick={()=>setSubmitted(true)} className="btn-teal"
                 style={{...css.tealBtn,flex:2,padding:14,fontSize:15,borderRadius:8}}>
-                出品申請を提出 ✓
+                出品申請を提出
               </button>
             </div>
           </div>
@@ -1444,10 +1462,10 @@ function AuthModal({ mode, setMode, onClose, onSuccess }) {
   return (
     <div className="modal-overlay" onClick={e=>e.target===e.currentTarget&&onClose()}>
       <div style={{...css.card,width:"100%",maxWidth:420,padding:36,position:"relative"}} className="fade-in">
-        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}>✕</button>
+        <button onClick={onClose} style={{position:"absolute",top:16,right:16,background:"none",border:"none",color:T.gray,cursor:"pointer",fontSize:20}}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.gray} strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
 
         <div style={{textAlign:"center",marginBottom:28}}>
-          <div style={{width:48,height:48,background:`linear-gradient(135deg,${T.teal},${T.cyan})`,borderRadius:12,display:"flex",alignItems:"center",justifyContent:"center",fontSize:22,margin:"0 auto 12px"}}>⚡</div>
+          <div style={{width:48,height:48,background:`linear-gradient(135deg,${T.teal},${T.cyan})`,borderRadius:12,display:"flex",alignItems:"center",justifyContent:"center",fontSize:22,margin:"0 auto 12px"}}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={T.teal} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="4"/><polyline points="8,12 11,16 16,8"/></svg></div>
           <h2 className="syne" style={{fontSize:22,fontWeight:700}}>
             {mode==="login" ? "ログイン" : "無料アカウント作成"}
           </h2>
@@ -1504,7 +1522,7 @@ function Footer({ setPage }) {
       <div style={{maxWidth:1280,margin:"0 auto",display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",gap:32,marginBottom:32}}>
         <div>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}>
-            <div style={{width:32,height:32,background:`linear-gradient(135deg,${T.teal},${T.cyan})`,borderRadius:8,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>⚡</div>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="7" fill={T.teal} fillOpacity="0.13" stroke={T.teal} strokeWidth="1.2"/><polyline points="10,15 14,19 21,10" stroke={T.teal} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             <span className="syne" style={{fontWeight:800,fontSize:18}}>Vibe<span style={{color:T.teal}}>Code</span> Market</span>
           </div>
           <p style={{color:T.gray,fontSize:13,lineHeight:1.8,maxWidth:280}}>日本初のサブスク型バイブコーディングマーケットプレイス。初期費用ゼロ・AIチャット修正・売買プラットフォーム。</p>
@@ -1527,7 +1545,7 @@ function Footer({ setPage }) {
       </div>
       <div style={{borderTop:`1px solid ${T.border}`,paddingTop:20,display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:12,color:T.gray}}>
         <span>© 2025 VibeCode Market. All rights reserved.</span>
-        <span>Made with ⚡ in Japan</span>
+        <span>Made in Japan</span>
       </div>
     </footer>
   );

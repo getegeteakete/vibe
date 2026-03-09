@@ -78,10 +78,10 @@ const stars = r => "★".repeat(Math.floor(r)) + (r%1>=0.5?"½":"") ;
 
 // ─── STYLE HELPERS ──────────────────────────────────────────
 const css = {
-  card:   `background:${T.card};border:1px solid ${T.border};border-radius:12px;`,
-  card2:  `background:${T.card2};border:1px solid ${T.border};border-radius:8px;`,
-  tealBtn:`background:${T.teal};color:${T.bg};font-weight:700;border:none;border-radius:8px;cursor:pointer;transition:all 0.2s;`,
-  ghostBtn:`background:transparent;color:${T.teal};border:1px solid ${T.teal};border-radius:8px;cursor:pointer;transition:all 0.2s;`,
+  card:    { background:T.card,    border:`1px solid ${T.border}`, borderRadius:12 },
+  card2:   { background:T.card2,   border:`1px solid ${T.border}`, borderRadius:8  },
+  tealBtn: { background:T.teal,    color:T.bg, fontWeight:700, border:'none', borderRadius:8,  cursor:'pointer', transition:'all 0.2s' },
+  ghostBtn:{ background:'transparent', color:T.teal, border:`1px solid ${T.teal}`, borderRadius:8, cursor:'pointer', transition:'all 0.2s' },
 };
 
 // ─── GLOBAL STYLES ──────────────────────────────────────────
